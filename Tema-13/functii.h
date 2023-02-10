@@ -256,3 +256,35 @@ void sumaSecventeSelectate(int v[], int dim,int n) {
 		cout << s << endl;
 	}
 }
+void bubbleSort(int v[], int dim) {
+	bool aff = true;
+	do {
+		aff = true;
+		for (int j = 0; j < dim - 1; j++) {
+			if (v[j] > v[j + 1]) {
+				int aux = v[j];
+				v[j] = v[j + 1];
+				v[j + 1] = aux;
+				aff = false;
+			}
+		}
+	} while (aff == false);
+}
+
+void secventaVectorOrdontatInclus(int v[], int dim, int v2[], int dim2) {
+	bubbleSort(v2, dim2);
+	int stg = 0;
+	int dr = 0;
+	for (int i = 0; i < dim; i++) {
+		if (v[i] = v2[i]) {
+			for (int f = 0; f < dim2; f++) {
+				if (v[f] == v2[f]) {
+					stg = i;
+					dr = f;
+				}
+			}
+		}
+
+	}
+	cout << stg << " " << dr;
+}

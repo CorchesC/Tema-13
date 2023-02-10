@@ -11,5 +11,6 @@ int main()
 	//sol7();
 	//sol8();
 	//sol9();
+	//sol10();
 }
 

@@ -67,5 +67,10 @@ void sol9() {
 	sumaSecventeSelectate(v, d, n);
 }
 void sol10() {
-	//
+	//Se dau doi vectori. A cu m componente şi B cu n componente (n>m). Componentele ce formează vectorul A sunt distincte două câte două.Să se scrie un program care să verifice dacă toate componentele vectorului A luate în orice ordine se găsesc în vectorul B pe poziții consecutive.Dacă testul este reuşit să se afişeze fiecare poziție din vectorul B unde începe secvenţa de elemente din A.
+	int v[100], d = 0;
+	citire(v, d);
+	int n[100], k = 0;
+	citire2(n, k);
+	secventaVectorOrdontatInclus(v, d, n, k);
 }
